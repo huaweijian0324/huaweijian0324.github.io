@@ -25,7 +25,7 @@
             <li><strong>Device Info</strong> — displays the device's hardware and system information.</li>
             <li><strong>Unseen</strong> — visualises invisible physical signals (magnetic field, light, pressure, motion, sound, Wi-Fi) using built-in phone sensors.</li>
             <li><strong>Lineate</strong> — turns a photo into line art on the device and lets you trace it in AR or colour it, with offline doodling and recording.</li>
-            <li><strong>Innermost</strong> — an on-device AI diary and knowledge notebook that helps you write, track your moods, keep notes, and chat with your past self or your notes. All AI features run on your device.</li>
+            <li><strong>Innermost</strong> — a private AI diary that helps you write, reflect on your week, and chat with your past self. All AI features run on your device.</li>
         </ul>
     </div>
 
@@ -65,19 +65,17 @@
     </ul>
 
     <h3>Innermost</h3>
-    <p>Stores your diary entries, notes, and analysis results <strong>solely on your device</strong> in the app's private encrypted database. Nothing is uploaded. The following data may be stored locally:</p>
+    <p>Stores your diary entries and analysis results <strong>solely on your device</strong> in the app's private encrypted database. Your text is never uploaded. The following data may be stored locally:</p>
     <ul>
         <li>Diary entries you write, including their date and time</li>
-        <li>Notes you write, including their title, content and tags</li>
-        <li>Your mood rating (1-5) that you select for each entry</li>
-        <li>Local search indexes (embedding vectors) used to recall your past diary entries and notes when chatting</li>
+        <li>Local search indexes (embedding vectors) used to recall your past diary entries when chatting</li>
         <li>AI model files (conversation, retrieval) that you choose to download in the Model Center</li>
         <li>App preferences such as your selected model and language</li>
         <li>On-device conversation history between you and the AI assistant</li>
     </ul>
 
     <h2>Data Processing</h2>
-    <p><strong>All data is processed locally on your device.</strong> No personal data is collected, stored on external servers, or shared with third parties. The apps do not transmit any sensor or device information over the internet.</p>
+    <p><strong>All data is processed locally on your device.</strong> No personal data is collected, stored on external servers, or shared with third parties. The apps do not transmit any sensor or device information over the internet, with one exception: if you use the in-app voice input in Innermost, the audio you dictate is passed to your device's speech recognition service, which may process it online (see the Innermost permissions below). Innermost never records, stores or uploads that audio itself.</p>
 
     <h2>Permissions</h2>
     <p>The apps request the following permissions only when you access the related feature. Denying a permission does not affect unrelated functionality.</p>
@@ -108,25 +106,26 @@
 
     <h3>Innermost</h3>
     <ul>
-        <li><strong>Internet / Network state:</strong> Used to download on-device AI model files from the Model Center, to show ads via Google AdMob, to process the Pro subscription through Google Play, and to open this privacy-policy page. Your diary and notes are never transmitted; all AI inference runs offline after the models are downloaded.</li>
+        <li><strong>Microphone:</strong> Used only for the in-app voice input button. While you hold it, the audio is passed to your device's speech recognition service, which may process it online (for example Google's). Innermost never records, stores or uploads the audio itself. If your device has no speech recognition service, use your keyboard's dictation instead.</li>
+        <li><strong>Internet / Network state:</strong> Used to download on-device AI model files from the Model Center, to show ads via Google AdMob, to process the Pro purchase through Google Play, and to open this privacy-policy page. Your diary is never transmitted, and all AI inference runs offline after the models are downloaded. The only thing that may leave your device is the audio you dictate to the system speech recogniser.</li>
     </ul>
 
     <h2>Advertising</h2>
     <p><strong>Device Info</strong> uses Google AdMob to display advertisements. AdMob may collect certain data as described in <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. You can remove all ads by purchasing the Pro version within the app.</p>
     <p><strong>Lineate</strong> uses Google AdMob to display advertisements (banner, interstitial and rewarded). AdMob may collect device identifiers for ad delivery as described in <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. You can remove all ads by purchasing the Pro version within the app.</p>
     <p><strong>Unseen</strong> contains no advertising SDK.</p>
-    <p><strong>Innermost</strong> uses Google AdMob to display banner and rewarded advertisements. AdMob may collect certain data as described in <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. You can remove all ads with the Pro subscription within the app.</p>
+    <p><strong>Innermost</strong> uses Google AdMob to display banner and rewarded advertisements. AdMob may collect certain data as described in <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. You can remove all ads with the Pro upgrade (subscription or one-time lifetime purchase) within the app.</p>
 
     <h2>In-App Purchases</h2>
     <p><strong>Device Info</strong> offers a one-time in-app purchase to remove advertisements. Purchase transactions are processed by Google Play and are subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
     <p><strong>Lineate</strong> offers a one-time in-app purchase (Pro) that removes advertisements and the export watermark. Purchase transactions are processed by Google Play and are subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
     <p><strong>Unseen</strong> contains no in-app purchases.</p>
-    <p><strong>Innermost</strong> offers a monthly Pro subscription (auto-renewing) through Google Play that unlocks unlimited chats and insights, the flagship chat model, and an ad-free experience. Purchase transactions are processed by Google Play and are subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. You can manage or cancel your subscription at any time in the Play Store.</p>
+    <p><strong>Innermost</strong> offers monthly and yearly Pro subscriptions (auto-renewing) and a one-time lifetime Pro purchase through Google Play. Pro unlocks unlimited chats, unlimited weekly reflections, and an ad-free experience. Purchase transactions are processed by Google Play and are subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. Subscriptions can be managed in the Play Store.</p>
 
     <h2>Third-party Services</h2>
     <p><strong>Unseen</strong> integrates <strong>Google ARCore</strong> for device pose tracking used by the AR feature. ARCore is loaded on demand by Google Play Services. See <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
     <p><strong>Lineate</strong> integrates the <strong>Google Mobile Ads (AdMob)</strong> SDK for advertising and uses <strong>Google Play Billing</strong> for in-app purchases. See <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. Line-art generation runs fully on the device and contacts no server.</p>
-    <p><strong>Innermost</strong> integrates the <strong>Google Mobile Ads (AdMob)</strong> SDK for advertising and uses <strong>Google Play Billing</strong> for the Pro subscription. It also downloads AI model files from public model repositories (GitHub Releases / Hugging Face) when you choose to download a model in the Model Center. These downloads carry no personal data; your diary never leaves your device.</p>
+    <p><strong>Innermost</strong> integrates the <strong>Google Mobile Ads (AdMob)</strong> SDK for advertising and uses <strong>Google Play Billing</strong> for Pro purchases. It also downloads AI model files from public model repositories (GitHub Releases / Hugging Face) when you choose to download a model in the Model Center. These downloads carry no personal data; your diary never leaves your device.</p>
     <p>Beyond the services listed above, the apps contain no analytics SDK, no crash reporter and no social login.</p>
 
     <h2>Children's Privacy</h2>
